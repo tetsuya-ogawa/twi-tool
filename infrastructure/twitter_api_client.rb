@@ -9,4 +9,8 @@ class TwitterApiClient
             config.access_token_secret = access_token_secret
         end
     end
+
+    def search(q, result_type: nil)
+        @client.search(q, result_type: result_type)
+    end
 end

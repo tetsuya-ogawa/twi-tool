@@ -1,3 +1,8 @@
 class Tweet
-    attr_accessor :text, :user
+    attr_reader :text, :user
+
+    def initialize(text:, user:)
+        @text = text
+        @user = user
+    end
 end

@@ -5,4 +5,8 @@ class UserRepository
 
     def search
     end
+
+    def find(id)
+        
+    end
 end
