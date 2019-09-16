@@ -10,7 +10,7 @@ class TwitterApiClient
         end
     end
 
-    def search(q, result_type: nil)
-        @client.search(q, result_type: result_type)
+    def search(q, result_type: nil, count:, slice_id:)
+        @client.search(q, result_type: result_type, count: count, slice_id: slice_id).take(count)
     end
 end
